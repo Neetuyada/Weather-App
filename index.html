@@ -17,19 +17,19 @@
         <p>Invalid city name</p>
          </div>
         <div class="weather">
-            <img src ="Weatherimages/rain.png" class = "weather-icon">
+            <img src ="rain.png" class = "weather-icon">
             <h1 class="temp">22°c</h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
-                    <img src ="Weatherimages/humidity.png">
+                    <img src ="humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src ="Weatherimages/wind.png">
+                    <img src ="wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -63,22 +63,22 @@
             document.querySelector(".wind").innerHTML = data.wind.speed + "Km/h";
             
             if(data.weather[0].main == "Clouds"){
-               weatherIcon.src = "Weatherimages/clouds.png";
+               weatherIcon.src = "clouds.png";
 
             }else if(data.weather[0].main == "Clear"){
-                weatherIcon.src = "Weatherimages/clear.png";
+                weatherIcon.src = "clear.png";
 
             }else if(data.weather[0].main == "Rain"){
-                weatherIcon.src = "Weatherimages/rain.png";
+                weatherIcon.src = "rain.png";
 
             }else if(data.weather[0].main == "Snow"){
-                weatherIcon.src = "Weatherimages/snow.png";
+                weatherIcon.src = "snow.png";
 
             }else if(data.weather[0].main == "Drizzle"){
-                weatherIcon.src = "Weatherimages/drizzle.png";
+                weatherIcon.src = "drizzle.png";
             }
             else if(data.weather[0].main == "Mist"){
-                weatherIcon.src = "Weatherimages/mist.png";
+                weatherIcon.src = "mist.png";
             }
            document.querySelector(".weather").style.display ="block";
            document.querySelector(".error").style.display = "none";
